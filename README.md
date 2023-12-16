@@ -39,3 +39,5 @@ After installation of all dependancies, just run the following command to launch
 streamlit run ProphetModel.py
 
 ```
+
+There are also two Jupyter Notebooks to which explains all codes.
