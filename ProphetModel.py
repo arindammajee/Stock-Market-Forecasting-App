@@ -43,7 +43,7 @@ class ProphetTicker:
         return self.data_path
     
     def FutureForecast(self, future_period=120):
-        self.future = self.model.make_future_dataframe(periods=60)
+        self.future = self.model.make_future_dataframe(periods=future_period)
         self.future['day'] = self.future['ds'].dt.weekday
         self.future = self.future[self.future['day'] < 5]
         self.forecast = self.model.predict(self.future)
