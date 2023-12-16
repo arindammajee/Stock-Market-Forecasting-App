@@ -8,9 +8,14 @@ matplotlib==3.7.1
 pandas==2.0.2
 prophet==1.1.5
 pytz==2023.3.post1
-pytz==2022.1
 streamlit==1.29.0
 yfinance==0.2.33
+```
+## Download the Project folder
+Either download this repository as a zip folder and extract in your machine. Or if you have already git in your machine, then run the following command from terminal,
+
+```
+git clone https://github.com/arindammajee/Stock-Market-Forecasting-App.git
 ```
 
 ## How To Run
