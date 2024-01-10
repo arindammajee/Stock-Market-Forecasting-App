@@ -42,6 +42,5 @@ streamlit run ProphetModel.py
 
 There are also two Jupyter Notebooks to which explains all codes. The app is deployed in Streamlit and you can find it from here - 
 
-```
-https://stockmarketforecasting.streamlit.app/
-```
+
+[```https://stockmarketforecasting.streamlit.app/```](https://stockmarketforecasting.streamlit.app/)
