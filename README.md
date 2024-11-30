@@ -1,46 +1,72 @@
-# Stock Market Prediction
+# Stock Market Prediction Using Prophet and Streamlit
+This repository provides a Streamlit-based web application for stock market prediction using Facebook's Prophet model. The app allows users to forecast stock prices for a given company ticker symbol over a specified period. Additionally, it visualizes training, testing, and prediction results.
 
+----
 
-## Requirements
+# Features
+- Fetches historical stock data using the Yahoo Finance API.
+- Implements Prophet to forecast future stock prices.
+- Provides interactive visualization of training, testing, and predictions.
+- Allows users to download historical data and forecast results.
+- Deployed using Streamlit for an intuitive user interface.
+
+---
+
+# Requirements
+Ensure you have the following Python dependencies installed:
 
 ```
-matplotlib==3.7.1
-pandas==2.0.2
-prophet==1.1.5
-pytz==2023.3.post1
-streamlit==1.29.0
+matplotlib==3.7.1  
+pandas==2.0.2  
+prophet==1.1.5  
+pytz==2023.3.post1  
+streamlit==1.29.0  
 yfinance==0.2.33
 ```
-## Download the Project folder
-Either download this repository as a zip folder and extract in your machine. Or if you have already git in your machine, then run the following command from terminal,
 
+# Installation
+1. Clone the Repository
 ```
-git clone https://github.com/arindammajee/Stock-Market-Forecasting-App.git
+git clone https://github.com/arindammajee/Stock-Market-Forecasting-App.git  
+cd Stock-Market-Forecasting-App  
 ```
-
-## How To Run
-Make sure you have Python3 and pip installed in your machine. If pip is not install, you can install it by running the following command:
-sudo apt update
-sudo apt install pip
-
-
-Open a terminal from this project folder and run the following command to install all the dependancies,
-
-
+2. Install Dependencies
+Make sure Python 3.x and pip are installed on your machine. Install the required packages using the requirements.txt file:
 ```
-pip install -r /path/to/requirements.txt
-
+pip install -r requirements.txt  
 ```
 
-After installation of all dependancies, just run the following command to launch the Streamlit App from your terminal.
+---
 
-
+# How to Run
+## Run the Streamlit App
 ```
 streamlit run ProphetModel.py
+```
+## Using the App
+- Enter the company ticker symbol (e.g., AAPL for Apple, TCS.NS for Tata Consultancy Services).
+- Specify the forecast period in days.
+- Click on Forecast stock prices to view results.
+- Download historical and forecasted data as CSV files from the app.
 
+# Notebooks
+This repository includes two Jupyter Notebooks for in-depth explanations of the code. You can explore the step-by-step implementation of stock data processing and prediction.
+
+# Live Demo
+The app is hosted on Streamlit. You can access it directly via the following link: [```https://stockmarketforecasting.streamlit.app/```](https://stockmarketforecasting.streamlit.app/)
+
+# File Structure
+```
+Stock-Market-Forecasting-App/  
+│  
+├── ProphetModel.py         # Main Python script for the Streamlit app  
+├── requirements.txt        # List of required dependencies  
+├── companies/              # Folder where company-specific data and results are saved  
+└── notebooks/              # Jupyter Notebooks for detailed implementation
 ```
 
-There are also two Jupyter Notebooks to which explains all codes. The app is deployed in Streamlit and you can find it from here - 
+# Author
+Arindam Majee
+For queries or suggestions, feel free to reach out!
 
 
-[```https://stockmarketforecasting.streamlit.app/```](https://stockmarketforecasting.streamlit.app/)
